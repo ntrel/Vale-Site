@@ -113,7 +113,7 @@ There are two kinds of arrays in Vale:
 
 <<<<
 
-If you know size is known at compile-time, then you can use a static-sized array.
+If the size is known at compile-time, then you can use a static-sized array.
 
 
 `[#5]int` is a static-sized array of 5 integers.
@@ -133,8 +133,8 @@ To access the element at index 3 in an array `arr`, we use `arr[3]`. Note that t
 ```vale
 exported func main() {
   arr = [#5](i => i * 2);
-  foreach i in range(0, 5) {
-    println(arr[i]);
+  foreach x in arr {
+    println(x);
   }
 }
 ```stdout

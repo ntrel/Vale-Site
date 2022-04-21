@@ -146,7 +146,7 @@ These are planned features for Vale. See the [roadmap](/roadmap) for plans!
 <<<<
 We'll be able to produce a *variant*, which is something that can be one of two types (or more).
 
-To make a variant, use an if-statement, and return a different type from the then branch than the else branch.
+To make a variant, use an `if` statement, and return a different type in the then branch than the else branch.
 
 Here, `a` is a variant, either a string or an integer. `a`'s type is `(str|int)`.
 ////
@@ -165,7 +165,7 @@ Later, we can use the `match` statement to determine if `a` actually contains a 
 ## Indexing Structs or Tuples for Variants
 
 <<<<
-We'll be able to access a arbitrary fields of tuples or structs with square brackets, like `arr[1 + 1]`, which would produce a *variant*. [#variantindexing]
+We'll be able to access arbitrary fields of tuples or structs with square brackets, like `arr[1 + 1]`, which would produce a *variant*. [#variantindexing]
 ////
 ```
 exported func main() {
